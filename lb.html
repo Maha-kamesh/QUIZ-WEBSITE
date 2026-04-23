@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Quiz App - Leaderboard</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            Quiz <span>Play</span>
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="quiz.html" id="quizBtn">Quiz</a>
+            <a href="lb.html" id="lbBtn">Leaderboard</a>
+        </nav>
+        <button class="btn" onclick="window.location.href='login.html'">Login</button>
+        <button class="gradient-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+    </header>
+
+    <div class="leaderboard-container">
+        <h2 class="heading" style="margin-top: 10px; margin-bottom: 30px; font-size: 2.8rem;">🏆 Quiz Leaderboard</h2>
+        <div class="leaderboard" id="dynamic-leaderboard">
+            <!-- Dynamically populated by JS -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

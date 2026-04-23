@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full-Stack Developer Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">
+      Quiz <span>Play</span>
+    </a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="lb.html" id="lbBtn">Leaderboard</a>
+    </nav>
+    <button class="btn" onclick="window.location.href='login.html'">Login</button>
+    <button class="gradient-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+  </header>
+
+  <div id="quiz-container" data-quiz="FS">
+    <p id="progress-text" style="color: #cbd5e1; font-weight: 600; margin-bottom: 1rem;"></p>
+    <h3 id="question-text">Loading question...</h3>
+    
+    <div id="options-container">
+      <!-- Options are dynamically injected by Javascript -->
+    </div>
+
+    <!-- Buttons that trigger logic via script.js -->
+    <button id="nextBtn">Next Question</button>
+    
+    <p id="result"></p>
+    
+    <!-- Appears at end of quiz -->
+    <button id="tryAgainBtn" style="display: none; background: linear-gradient(45deg, #10b981, #059669);">Try Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

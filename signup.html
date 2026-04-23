@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Quiz App - Sign Up</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            Quiz <span>Play</span>
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="quiz.html" id="quizBtn">Quiz</a>
+            <a href="lb.html" id="lbBtn">Leaderboard</a>
+        </nav>
+        <button class="btn" onclick="window.location.href='login.html'">Login</button>
+        <button class="gradient-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>Create Account</h2>
+            <p>Join the fun and track your scores!</p>
+            <form action="index.html" class="auth-form">
+                <div class="input-group">
+                    <i class='bx bx-user'></i>
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <i class='bx bx-envelope'></i>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <i class='bx bx-lock-alt'></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="gradient-btn auth-submit">Sign Up</button>
+            </form>
+            <div class="auth-footer">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
